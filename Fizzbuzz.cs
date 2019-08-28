@@ -8,5 +8,11 @@ namespace c_sharp_practice
     {
       Console.WriteLine("Hello World!");
     }
+
+    public static bool DivisibleBy(int divisor, int num)
+    {
+      return true;
+    }
+
   }
 }
