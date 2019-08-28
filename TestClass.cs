@@ -4,23 +4,24 @@ using fizzBuzz;
 public class TestClass
 {
   [Theory]
-  [InlineData(3, 3)]
-  [InlineData(6, 3)]
-  [InlineData(9, 3)]
+  [InlineData(3)]
+  [InlineData(6)]
+  [InlineData(9)]
 
-  public void NumbersDivisibleByThreeTheory(int num, int divisor)
+  public void NumbersDivisibleByThreeTheory(int num)
   {
-    Assert.True(FizzBuzz.DivisibleBy(num, divisor));
+    Assert.True(FizzBuzz.DivisibleByThree(num));
   }
 
   [Theory]
-  [InlineData(5, 5)]
-  [InlineData(10, 5)]
-  [InlineData(20, 5)]
+  [InlineData(5)]
+  [InlineData(10)]
+  [InlineData(20)]
 
-  public void NumbersDivisibleByFiveTheory(int num, int divisor)
+  public void NumbersDivisibleByFiveTheory(int num)
   {
-    Assert.True(FizzBuzz.DivisibleBy(num, divisor));
+    Assert.True(FizzBuzz.DivisibleByFive(num));
   }
+
 
 }

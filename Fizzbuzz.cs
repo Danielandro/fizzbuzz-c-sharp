@@ -9,9 +9,14 @@ namespace fizzBuzz
       Console.WriteLine("Hello World!");
     }
 
-    public static bool DivisibleBy(int num, int divisor)
+    public static bool DivisibleByThree(int num)
     {
-      return num % divisor == 0;
+      return num % 3 == 0;
+    }
+
+    public static bool DivisibleByFive(int num)
+    {
+      return num % 5 == 0;
     }
 
   }
