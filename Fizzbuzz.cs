@@ -19,5 +19,9 @@ namespace fizzBuzz
       return num % 5 == 0;
     }
 
+    public static bool DivisibleByThreeAndFive(int num)
+    {
+      return num % 15 == 0;
+    }
   }
 }

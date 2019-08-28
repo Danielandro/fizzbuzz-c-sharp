@@ -23,5 +23,14 @@ public class TestClass
     Assert.True(FizzBuzz.DivisibleByFive(num));
   }
 
+  [Theory]
+  [InlineData(15)]
+  [InlineData(30)]
+  [InlineData(45)]
+
+  public void NumbersDivisibleByFiveAndThreeTheory(int num)
+  {
+    Assert.True(FizzBuzz.DivisibleByThreeAndFive(num));
+  }
 
 }
