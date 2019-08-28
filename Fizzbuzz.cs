@@ -1,17 +1,17 @@
 ﻿using System;
 
-namespace c_sharp_practice
+namespace fizzBuzz
 {
-  class Fizzbuzz
+  class FizzBuzz
   {
     static void Main(string[] args)
     {
       Console.WriteLine("Hello World!");
     }
 
-    public static bool DivisibleBy(int divisor, int num)
+    public static bool DivisibleBy(int num, int divisor)
     {
-      return true;
+      return num % divisor == 0;
     }
 
   }

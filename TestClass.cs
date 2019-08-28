@@ -1,12 +1,26 @@
 using Xunit;
+using fizzBuzz;
 
 public class TestClass
 {
-  [Fact]
+  [Theory]
+  [InlineData(3, 3)]
+  [InlineData(6, 3)]
+  [InlineData(9, 3)]
 
-  public void TestIfNumberIsDivisibleByThree()
+  public void NumbersDivisibleByThreeTheory(int num, int divisor)
   {
-    Assert.True(c_sharp_practice.Fizzbuzz.DivisibleBy(9, 3));
+    Assert.True(FizzBuzz.DivisibleBy(num, divisor));
+  }
+
+  [Theory]
+  [InlineData(5, 5)]
+  [InlineData(10, 5)]
+  [InlineData(20, 5)]
+
+  public void NumbersDivisibleByFiveTheory(int num, int divisor)
+  {
+    Assert.True(FizzBuzz.DivisibleBy(num, divisor));
   }
 
 }
