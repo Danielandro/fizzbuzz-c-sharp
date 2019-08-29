@@ -99,4 +99,11 @@ public class TestClass
   {
     Assert.Equal("Fizz", FizzBuzz.GetOutput(num));
   }
+
+  [Fact]
+
+  public void BuzzIfNumberDivisibleByFive()
+  {
+    Assert.Equal("Buzz", FizzBuzz.GetOutput(10));
+  }
 }

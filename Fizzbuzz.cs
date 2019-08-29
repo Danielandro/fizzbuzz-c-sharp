@@ -34,6 +34,10 @@ namespace fizzBuzz
       {
         return "Fizz";
       }
+      else if (DivisibleByFive(num))
+      {
+        return "Buzz";
+      }
       else
       {
         return num.ToString();
