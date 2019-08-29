@@ -88,6 +88,12 @@ public class TestClass
   public void FizzBuzzIfNumberDivisibleByThreeAndFiveTheory(int num)
   {
     Assert.Equal("FizzBuzz", FizzBuzz.GetOutput(num));
+  }
 
+  [Fact]
+
+  public void FizzIfNumberDivisibleByThree()
+  {
+    Assert.Equal("Fizz", FizzBuzz.GetOutput(6));
   }
 }

@@ -30,6 +30,10 @@ namespace fizzBuzz
       {
         return "FizzBuzz";
       }
+      else if (DivisibleByThree(num))
+      {
+        return "Fizz";
+      }
       else
       {
         return num.ToString();
