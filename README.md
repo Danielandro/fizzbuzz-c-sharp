@@ -1,6 +1,6 @@
-## FizzBuzz in C#
+## FizzBuzz in C
 
-Classic fizzbuzz challenge TDD'd in C# using Xunit
+Classic fizzbuzz challenge TDD'd in C# using Xunit. Exploring unit testing in C#.
 
 ## Rules
 
@@ -15,19 +15,8 @@ Fork the repo
 
 Run `dotnet run` to run the app
 
-**Run Tests**
-Run `dotnet test`
+![Screenshot of app running](/images/fizzbuzz-dotnet-run.png)
 
-<!--
-**Example**
+Run `dotnet test` to run the tests
 
-```C#
-
-var javaBuzz = new Javabuzz();
-
-// for numbers 1-100
-for(var i = 0; i <= 100; i++) {
-  console.log(javabuzz.says(i));
-} -->
-
-<!-- ``` -->
+![Screenshot of tests running](/images/fizzbuzz-dotnet-test.png)
