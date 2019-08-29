@@ -100,10 +100,13 @@ public class TestClass
     Assert.Equal("Fizz", FizzBuzz.GetOutput(num));
   }
 
-  [Fact]
+  [Theory]
+  [InlineData(5)]
+  [InlineData(10)]
+  [InlineData(20)]
 
-  public void BuzzIfNumberDivisibleByFive()
+  public void BuzzIfNumberDivisibleByFive(int num)
   {
-    Assert.Equal("Buzz", FizzBuzz.GetOutput(10));
+    Assert.Equal("Buzz", FizzBuzz.GetOutput(num));
   }
 }
