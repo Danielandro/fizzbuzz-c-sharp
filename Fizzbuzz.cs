@@ -1,13 +1,9 @@
-﻿using System;
-
+﻿
 namespace fizzBuzz
 {
   class FizzBuzz
   {
-    static void Main(string[] args)
-    {
-      Console.WriteLine("Hello World!");
-    }
+
 
     public static bool DivisibleByThree(int num)
     {
