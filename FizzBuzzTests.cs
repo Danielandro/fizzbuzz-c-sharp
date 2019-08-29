@@ -90,10 +90,13 @@ public class TestClass
     Assert.Equal("FizzBuzz", FizzBuzz.GetOutput(num));
   }
 
-  [Fact]
+  [Theory]
+  [InlineData(3)]
+  [InlineData(6)]
+  [InlineData(9)]
 
-  public void FizzIfNumberDivisibleByThree()
+  public void FizzIfNumberDivisibleByThree(int num)
   {
-    Assert.Equal("Fizz", FizzBuzz.GetOutput(6));
+    Assert.Equal("Fizz", FizzBuzz.GetOutput(num));
   }
 }
