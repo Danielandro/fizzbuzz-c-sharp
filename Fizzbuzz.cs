@@ -23,5 +23,18 @@ namespace fizzBuzz
     {
       return num % 15 == 0;
     }
+
+    public static string GetOutput(int num)
+    {
+      if (DivisibleByThreeAndFive(num))
+      {
+        return "FizzBuzz";
+
+      }
+      else
+      {
+        return "A";
+      }
+    }
   }
 }
