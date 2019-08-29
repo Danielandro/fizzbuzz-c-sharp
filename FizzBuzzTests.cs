@@ -80,9 +80,9 @@ public class TestClass
     Assert.Equal(num.ToString(), FizzBuzz.GetOutput(num));
   }
 
-  // [Fact]
-  // public void FizzBuzzIfNumberDivisibleByThreeAndFive()
-  // {
-  //   Assert.Equal("FizzBuzz", FizzBuzz.GetOutput(15));
-  // }
+  [Fact]
+  public void FizzBuzzIfNumberDivisibleByThreeAndFive()
+  {
+    Assert.Equal("FizzBuzz", FizzBuzz.GetOutput(15));
+  }
 }
