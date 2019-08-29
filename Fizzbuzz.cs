@@ -26,15 +26,9 @@ namespace fizzBuzz
 
     public static string GetOutput(int num)
     {
-      if (DivisibleByThreeAndFive(num))
-      {
-        return "FizzBuzz";
 
-      }
-      else
-      {
-        return "A";
-      }
+      return num.ToString();
+
     }
   }
 }

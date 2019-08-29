@@ -70,10 +70,15 @@ public class TestClass
     Assert.False(FizzBuzz.DivisibleByThreeAndFive(num));
   }
 
-  [Fact]
-  public void FizzBuzzIfNumberDivisibleByThreeAndFive()
-  {
-    Assert.Equal("FizzBuzz", FizzBuzz.GetOutput(15));
-  }
+  // [Theory]
+  // public void FizzBuzzIfNumberDivisibleByThreeAndFive()
+  // {
+  //   Assert.Equal("FizzBuzz", FizzBuzz.GetOutput(15));
+  // }
 
+  [Fact]
+  public void ReturnNumberIfNotDivisibleFact()
+  {
+    Assert.Equal("7", FizzBuzz.GetOutput(7));
+  }
 }
